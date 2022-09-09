@@ -1,3 +1,5 @@
+// Rewrite code using arrow function
+
 // const plantNeedsWater = function(day) {
 //  if (day === 'Wednesday') {
 //    return true;
@@ -5,8 +7,6 @@
 //    return false;
 //  }
 // };
-// 
-// 
 const plantNeedsWater = day => {
    if (day === 'WEDNESDAY') {
       return true;
