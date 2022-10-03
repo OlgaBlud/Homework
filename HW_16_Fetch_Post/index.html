@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <h1>Visitor's preferences about cats</h1>
+   <form action="https://httpbin.org/post" method="post">
+      <fieldset>
+         <!-- Favourite -->
+         <div>
+            <label for="favouriteCatsBreed">Favourite cat breed:</label>
+            <select name="catBreed" id="favouriteCatBreed" required>
+               <option value="Choose">Make choice</option>
+            </select>
+         </div>
+         <!-- Quantity -->
+         <div>
+            <label for="numberOfCats">How many cats did you have?</label>
+            <input type="number" name="catNumber" value="0" min="0" required>
+         </div>
+         <!-- Name -->
+         <div>
+            <label for="catName">What is your favourite cat's name?</label>
+            <input type="text" name="catName" minlength="2" placeholder="At least 2 letters"
+               pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" required>
+         </div>
+         <!-- buttons -->
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+      </fieldset>
+   </form>
+   <script src="./index.js"></script>
+
+</body>
+
+</html>
